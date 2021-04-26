@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Путешествуй просто</title>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <img src="Images/logo-1.png" alt="Logo">
+            </div>
+            <h2>г. Томск ул. Фрунзе 39<br>8-823-122-45-23<br>tourTomsk@ya.ru</h2>
+            <button>Заказать звонок</button>
+        </div>
+        <nav>
+            <a href="#catalog">Выбрать тур</a>
+            <a href="#advantages">Наши преимущества</a>
+            <a href="#review">Отзывы</a>
+            <a href="#about">О нас</a>
+        </nav>
+    </header>
+    <main>
+        <section class="slogan">
+            <h2>Ваш отдых - наша работа!</h2>
+            <button>Выбрать горящий тур</button>
+        </section>
+        <section class="features">
+            <h2>Особенности горящих туров</h2>
+            <div class="content">
+                <div class="plus">
+                    <h3>Преимущества</h3>
+                    <ul>
+                        <li>
+                            <h4>Низкая цена.</h4>
+                            <p>Не все туристы имеют возможность заранее спланировать поездку. Иногда решение об отпуске
+                                принимается спонтанно, и времени на подготовку путешествия попросту не остается. К тому
+                                же,
+                                в последний момент практически невозможно подыскать авиабилеты в нужном направлении по
+                                скидке и выгодные условия проживания в отелях. В этом случае единственным разумным
+                                вариантом
+                                остается горящий тур, который позволяет не просто отдохнуть по адекватной цене, но и
+                                сэкономить до половины от первоначальной стоимости путевки.</p>
+                        </li>
+                        <li>
+                            <h4>Возможность отправиться в поездку немедленно.</h4>
+                            <p>Между покупкой турпакета и непосредственным путешествием проходит совсем мало времени.
+                                Таким образом, туристу не приходится томиться в ожидании поездки, а можно наслаждаться
+                                отдыхом и новыми впечатлениями практически сразу.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="minus">
+                    <h3>Недостатки</h3>
+                    <ul>
+                        <li>
+                            <h4>Необходимость подготовиться к путешествию очень быстро.</h4>
+                            <p>В некоторых случаях на сборы остается всего несколько часов.</p>
+                        </li>
+                        <li>
+                            <h4>Невозможность вернуть приобретенные туры обратно.</h4>
+                            <p>В отличие от раннего бронирования, при отказе от горящей путевки деньги туристу не
+                                возвращаются.</p>
+                        </li>
+                        <li>
+                            <h4>Отсутствие возможности выбора.</h4>
+                            <p>Определенного типа отеля, даты и времени вылета самолета, а также количества дней,
+                                которые можно будет провести на отдыхе в другой стране. Это связано с тем, что
+                                предлагаемый горящий тур уже предварительно скомплектован туроператором и не подлежит
+                                изменению.</p>
+                        </li>
+                        <li>
+                            <h4>Сезонный фактор.</h4>
+                            <p>Поскольку в пик сезона спрос на подобные туры значительно возрастает, подобрать
+                                подходящий вариант бывает очень сложно. Лучше всего приобретать горящие путевки, когда
+                                на туристическом рынке наблюдается снижение спроса.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <a name="catalog"></a>
+        <section class="catalog">
+            <h2>Список туров</h2>
+            <!--Добавляем кнопки, которые будут переключаться между собой-->
+            <input type="radio" name="item" id="vietnam" checked>
+            <input type="radio" name="item" id="indonezia">
+            <input type="radio" name="item" id="china">
+            <input type="radio" name="item" id="russia">
+            <input type="radio" name="item" id="all">
+            <div class="label">
+                <!--Связываем выбор кнопки с навванием категории товара и наоборот-->
+                <label for="vietnam" id="vietnamlabel">Вьетнам</label>
+                <label for="indonezia" id="indonezialabel">Индонезия</label>
+                <label for="china" id="chinalabel">Китай</label>
+                <label for="russia" id="russialabel">Россия</label>
+                <label for="all" id="all_label">Все туры</label>
+            </div>
+            <div class="content">
+                <div class="container vietnam-container">
+                    <div class="card">
+                        <img src="Content/Туры/Вьетнам/Нянчанг.jpg" alt="vietnam">
+                        <h3>Нянчанг 1</h3>
+                        <p>Вьетнам</p>
+                        <div class="price">
+                            <p>32 600р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Вьетнам/Нянчанг 2.jpg" alt="vietnam">
+                        <h3>Нянчанг 2</h3>
+                        <p>Вьетнам</p>
+                        <div class="price">
+                            <p>34 666р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Вьетнам/Нянчанг 3.jpg" alt="vietnam">
+                        <h3>Нянчанг 3</h3>
+                        <p>Вьетнам</p>
+                        <div class="price">
+                            <p>34 100р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container indonezia-container">
+                    <div class="card">
+                        <img src="Content/Туры/Индонезия/Бали1.jpg" alt="indonezia">
+                        <h3>Бали</h3>
+                        <p>Индонезия</p>
+                        <div class="price">
+                            <p>88 600р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Индонезия/Кута1.jpg" alt="indonezia">
+                        <h3>Кута 1</h3>
+                        <p>Индонезия</p>
+                        <div class="price">
+                            <p>81 666р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Индонезия/Кута 2.jpg" alt="indonezia">
+                        <h3>Кута 2</h3>
+                        <p>Индонезия</p>
+                        <div class="price">
+                            <p>82 100р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container china-container">
+                    <div class="card">
+                        <img src="Content/Туры/Китай/Санья.jpg" alt="china">
+                        <h3>Санья</h3>
+                        <p>Китай</p>
+                        <div class="price">
+                            <p>38 600р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Китай/о.Хайнань.jpg" alt="china">
+                        <h3>о. Хайнань 1</h3>
+                        <p>Китай</p>
+                        <div class="price">
+                            <p>48 750р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Китай/о.Хайнань 2.jpg" alt="china">
+                        <h3>о. Хайнань 2</h3>
+                        <p>Китай</p>
+                        <div class="price">
+                            <p>56 400р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container russia-container">
+                    <div class="card">
+                        <img src="Content/Туры/По России/Адлер.jpg" alt="russia">
+                        <h3>Адлер</h3>
+                        <p>Россия</p>
+                        <div class="price">
+                            <p>28 600р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/По России/Белокуриха.jpg" alt="russia">
+                        <h3>Белокуриха</h3>
+                        <p>Россия</p>
+                        <div class="price">
+                            <p>58 750р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/По России/Домбай.jpg" alt="russia">
+                        <h3>Домбай</h3>
+                        <p>Россия</p>
+                        <div class="price">
+                            <p>36 400р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container all-container">
+                    <div class="card">
+                        <img src="Content/Туры/Вьетнам/Нянчанг.jpg" alt="all">
+                        <h3>Нянчанг 1</h3>
+                        <p>Вьетнам</p>
+                        <div class="price">
+                            <p>32 600р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Вьетнам/Нянчанг 2.jpg" alt="all">
+                        <h3>Нянчанг 2</h3>
+                        <p>Вьетнам</p>
+                        <div class="price">
+                            <p>34 666р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Вьетнам/Нянчанг 3.jpg" alt="all">
+                        <h3>Нянчанг 3</h3>
+                        <p>Вьетнам</p>
+                        <div class="price">
+                            <p>34 100р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Индонезия/Бали1.jpg" alt="all">
+                        <h3>Бали</h3>
+                        <p>Индонезия</p>
+                        <div class="price">
+                            <p>88 600р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Индонезия/Кута1.jpg" alt="all">
+                        <h3>Кута 1</h3>
+                        <p>Индонезия</p>
+                        <div class="price">
+                            <p>81 666р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Индонезия/Кута 2.jpg" alt="all">
+                        <h3>Кута 2</h3>
+                        <p>Индонезия</p>
+                        <div class="price">
+                            <p>82 100р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Китай/Санья.jpg" alt="all">
+                        <h3>Санья</h3>
+                        <p>Китай</p>
+                        <div class="price">
+                            <p>38 600р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Китай/о.Хайнань.jpg" alt="all">
+                        <h3>о. Хайнань 1</h3>
+                        <p>Китай</p>
+                        <div class="price">
+                            <p>48 750р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/Китай/о.Хайнань 2.jpg" alt="all">
+                        <h3>о. Хайнань 2</h3>
+                        <p>Китай</p>
+                        <div class="price">
+                            <p>56 400р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/По России/Адлер.jpg" alt="all">
+                        <h3>Адлер</h3>
+                        <p>Россия</p>
+                        <div class="price">
+                            <p>28 600р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/По России/Белокуриха.jpg" alt="all">
+                        <h3>Белокуриха</h3>
+                        <p>Россия</p>
+                        <div class="price">
+                            <p>58 750р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Content/Туры/По России/Домбай.jpg" alt="all">
+                        <h3>Домбай</h3>
+                        <p>Россия</p>
+                        <div class="price">
+                            <p>36 400р.</p>
+                            <button>купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="consultants">
+            <h2>Наши консультанты</h2>
+            <div class="content">
+                <div class="consultant">
+                    <img src="Content/Консультанты/Галина Петрова менеджер по туризму.jpg" alt="consultant">
+                    <p>Галина Петрова</p>
+                    <p>менеджер по туризму</p>
+                </div>
+                <div class="consultant">
+                    <img src="Content/Консультанты/Иван Алексеев менеджер по туризму.jpg" alt="consultant">
+                    <p>Иван Алексеев</p>
+                    <p>менеджер по туризму</p>
+                </div>
+                <div class="consultant">
+                    <img src="Content/Консультанты/Светлана Астахова менеджер по туризму.jpg" alt="consultant">
+                    <p>Светлана Астахова</p>
+                    <p>менеджер по туризму</p>
+                </div>
+            </div>
+        </section>
+        <a name="advantages"></a>
+        <section class="advantages">
+            <h2>Преимущества покупки тура у нас</h2>
+            <div class="content">
+                <ul>
+                    <li>Огромный выбор туров.</li>
+                    <li>Лучший онлайн поиск туров с вылетом из Томска.</li>
+                    <li>Максимальные скидки по всем операторам.</li>
+                    <li>Покупка авиабилетов в любую точку мира.</li>
+                    <li>Надёжность, гарантированная честным договором с туристами!</li>
+                    <li>Вся информация о клиенте конфиденциальна.</li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <a name="review"></a>
+        <section class="reviews">
+            <h2>Отзывы</h2>
+            <div class="content">
+                <div class="otziv">
+                    <p>Надежда 11.11.2019</p>
+                    <p><b>Отдыхали в Тайланде с 15.10.19г.от данной турфирмы . Отдых получился отличный, с погодой
+                            угадали,
+                            без дождей. Хочется от души поблагодарить менеджера Бельскую Ольгу Сергеевну за подбор
+                            тура,
+                            выбранного отеля Амбасадор Океан Винг, за приятное общение. Дай вам Бог здоровья,
+                            класных
+                            клиентов , счастья и любви. Будем вас рекомендовать друзьям ,родным и знакомым.
+                            СПАСИБО!!!!</b></p>
+                </div>
+                <div class="otziv">
+                    <p>Галина 09.11.2019</p>
+                    <p><b>Благодарны очень за организацию тура в Таиланд менеджеру Наталье Миндюк. Информацию
+                            предоставила
+                            в полном объеме, доброжелательная, активная, оперативно были выполнены все наши
+                            пожелания,
+                            никаких неприятных сюрпризов не произошло. Спасибо, Наталья!</b></p>
+                </div>
+                <div class="otziv">
+                    <p>Екатерина 04.11.2019</p>
+                    <p><b>Добрый день)))Хочу выразить огромную благодарность Наталье Дмитриевой!!!Наташенька,спасибо
+                            огромное за наш прекрасный отпуск!!!Спасибо за выбор страны и отеля!!!Мы довольны)))</b>
+                    </p>
+                </div>
+                <div class="otziv">
+                    <p>Татьяна 03.11.2019</p>
+                    <p><b>С 16 по 27 октября отдыхали в Таиланде, Паттайе, отеле "Амбассадор Сити". Выражаю огромную
+                            благодарность менеджеру Ольге Бельской за удачно подобранный тур: удобное время вылета,
+                            превосходный отель, чудесный пляж, прекрасные погодные условия - всё это способствовало
+                            отличному отдыху, замечательному настроению, незабываемым впечатлениям. Желаю успехов и
+                            процветания! От всей души БЛАГОДАРЮ!</b></p>
+                </div>
+            </div>
+        </section>
+        <section class="pokupka">
+            <h2>Всё! Я хочу отдыхать!</h2>
+            <button>Подобрать тур</button>
+        </section>
+        <a name="about"></a>
+        <section class="about">
+            <div class="back"></div>
+            <div class="content">
+                <h2>О компании</h2>
+                <p>Наша компания создана для Вашего комфорта.</p>
+                <p>Мы сделали выбор и покупку тура максимально удобным для Вас. В нашем поиске можно найти
+                    путешествия
+                    от 80-ти туроператоров.</p>
+                <p> Оплата туров происходит через защищенные порталы Сбербанка.</p>
+                <p>Если Вам понадобится помощь специалиста в подборе тура, наши менеджеры всегда, с радостью,
+                    подберут
+                    путешествие по Вашим запросам и будут с Вами на связи на протяжении
+                    всего отдыха.</p>
+                <p>Покупая тур в нашей компании, Вы не платите никаких дополнительных комиссий и сборов, Вы
+                    бронируете
+                    тур по цене туроператора.</p>
+            </div>
+        </section>
+        <section class="podbor"></section>
+    </main>
+    <footer>
+        <nav>
+            <a href="#catalog">Список товаров</a>
+            <a href="#info">Полезная информация</a>
+            <a href="#about">О компании</a>
+        </nav>
+        <div class="top">
+            <div class="logo">
+                <img src="Images/logo-1.png" alt="Logo">
+            </div>
+            <h2>8-823-122-45-23</h2>
+            <button>Заказать звонок</button>
+        </div>
+    </footer>
+    <a href="#top" id="topp"></a>
+
+
+
+</body>
+
+</html>
